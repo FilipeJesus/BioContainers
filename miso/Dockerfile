@@ -2,7 +2,7 @@ FROM python:2.7.15
 
 MAINTAINER Filipe Jesus
 
-ADD complete_run.sh /
+ADD miso/complete_run.sh /
 
 RUN apt-get update
 RUN pip install misopy
