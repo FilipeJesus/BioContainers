@@ -5,7 +5,7 @@ MAINTAINER Filipe Jesus
 ADD miso/complete_run.sh /
 
 RUN apt-get update
-RUN pip install misopy
+RUN pip install misopy==0.5.4
 RUN pip install bsddb3
 
 RUN apt-get install bedtools
