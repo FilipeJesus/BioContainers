@@ -25,4 +25,4 @@ then
   miso --run $3 $4 --output-dir $6 --read-len $5
 fi
 
-summarize_miso --summarize-samples $6 $6
+summarize_miso --summarize-samples $6 $6'_summary'
