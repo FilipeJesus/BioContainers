@@ -18,11 +18,11 @@ then
   echo $mean
   echo $sd
 
-  miso --run $3 $4 --output-dir miso_out/ --read-len $5 --paired-end $mean $sd
+  miso --run $3 $4 --output-dir $6 --read-len $5 --paired-end $mean $sd
 fi
 if [ $2 = "Single" ]
 then
   miso --run $3 $4 --output-dir $6 --read-len $5
 fi
 
-summarize_miso --summarize-samples $6 $6
+summarize_miso --summarize-samples $6 $6'_summary'
