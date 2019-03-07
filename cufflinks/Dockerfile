@@ -4,7 +4,7 @@ FROM python:2.7.15
 #Maintainer and author
 MAINTAINER Magdalena Arnal <marnal@imim.es>
 
-ADD tablemaker2.1.1.Linux_x86_64.tar.gz /
+ADD cufflinks/tablemaker2.1.1.Linux_x86_64.tar.gz /
 
 #Update and install packages wget, unzip
 RUN apt-get update -y && apt-get install -y \
