@@ -2,7 +2,8 @@
 FROM python:2.7.15
 
 #Maintainer and author
-MAINTAINER Magdalena Arnal <marnal@imim.es>
+MAINTAINER Filipe Jesus <filipeje@hotmail.co.uk>
+#Insperation from Magdalena Arnal <marnal@imim.es> docker machalen/cufflinksdocker
 
 ADD cufflinks/tablemaker2.1.1.Linux_x86_64.tar.gz /
 
@@ -46,3 +47,5 @@ WORKDIR /
 RUN apt-get update
 RUN cp -r tablemaker-2.1.1.Linux_x86_64/ /bin/
 RUN rm -rf tablemaker-2.1.1.Linux_x86_64/
+
+ENV PATH $PATH:/bin/tablemaker-2.1.1.Linux_x86_64
