@@ -4,7 +4,7 @@ FROM r-base:3.5.0
 MAINTAINER Filipe Jesus
 
 # Install bioconductor 
-RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite("fgsea")'
+RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite("fgsea", version = "3.8")'
 
 # Cleanup 
 RUN apt-get clean
